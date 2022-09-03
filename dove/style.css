@@ -1,0 +1,14 @@
+@font-face {
+  font-family: vazir;
+  src: url(/fonts/iranyekanwebbold.ttf);
+}
+
+* {
+  font-family: vazir;
+  font-size: 20px;
+}
+
+body {
+  background-color: #eee;
+}
+
