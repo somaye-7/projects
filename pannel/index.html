@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"/>
+    <title>Document</title>
+</head>
+<body>
+    
+    
+    <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container-fluid">
+          <button class="navbar-toggler bg-light" data-bs-toggle="collapse" data-bs-target="#sidebar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!--side bar-->
+          <div class="collapse navbar-collapse" id="sidebar">
+            <div class="row">
+              <div class="col-xl-2 col-lg-3 col-md-4 sidebar fixed-top">
+                <a href="" class="text-white navbar-brand text-center mx-auto d-block py-3 mb-3 border-bottom">توسن</a>
+                <div class="border-bottom py-2">
+                  <img src="images/profile.jpg" class="img-fluid rounded-circle w-25" alt="">
+                  <a href="" class="text-center text-white" style="text-decoration: none;">سمیه حیدری</a>
+                </div>
+                <ul class="navbar-nav list-unstyled flex-column mt-4">
+                  <li class="nav-item current">
+                    <a href="" class="nav-link text-white ">
+                      <i class="fas fa-home fa-lg me-3"></i>داشبورد
+                    </a>\
+                  </li>
+                  <li class="nav-item sidebar-link">
+                    <a href="" class="nav-link text-white">
+                      <i class="fas fa-user fa-lg me-3"></i>پروفایل
+                    </a>\
+                  </li>
+                  <li class="nav-item sidebar-link">
+                    <a href="" class="nav-link text-white">
+                      <i class="fas fa-envelope fa-lg me-3"></i>پیام ها
+                    </a>\
+                  </li>
+                  <li class="nav-item sidebar-link">
+                    <a href="" class="nav-link text-white">
+                      <i class="fas fa-shopping-cart fa-lg me-3"></i>فروش
+                    </a>\
+                  </li>
+                  <li class="nav-item sidebar-link">
+                    <a href="" class="nav-link text-white">
+                      <i class="fas fa-chart-line fa-lg me-3"></i>تحلیل
+                    </a>\
+                  </li>
+                  <li class="nav-item sidebar-link">
+                    <a href="" class="nav-link text-white">
+                      <i class="fas fa-chart-bar fa-lg me-3"></i>نمودارها
+                    </a>\
+                  </li>
+                  <li class="nav-item sidebar-link">
+                    <a href="" class="nav-link text-white">
+                      <i class="fas fa-table fa-lg me-3"></i>جدول
+                    </a>\
+                  </li>
+                  <li class="nav-item sidebar-link">
+                    <a href="" class="nav-link text-white">
+                      <i class="fas fa-wrench fa-lg me-3"></i>تنظیمات
+                    </a>\
+                  </li>
+                </ul>
+              </div>
+              <!--top nav-->
+              <div class="col-xl-10 col-lg-9 col-md-8 topbar-color ms-auto fixed-top py-2 top-navbar">
+                <div class="row">
+                  <div class="col-md-4 py-2">
+                    <h5 class="text-light">
+                      داشبورد
+                    </h5>
+                  </div>
+                  <div class="col-md-5">
+                    <form class="my-4 my-md-0">
+                      <div class="input-group">
+                        <button class="btn btn-white search-button rounded-circle">
+                          <i class="fas fa-search text-danger"></i>
+                        </button>
+                        <input type="text" placeholder="جستجو" class="form-control search-input">
+                      </div>
+                    </form>
+                  </div>
+                  <div class="col-md-3 ps-5">
+                    <ul class="navbar-nav flex-row justify-content-center">
+                      <li class="nav-item px-3 px-md-0">
+                        <a href="" class="nav-link">
+                          <i class="fas fa-comments fa-lg text-light">
+
+                          </i>
+                        </a>
+                      </li>
+                      <li class="nav-item px-3 px-md-0">
+                        <a href="" class="nav-link">
+                          <i class="fas fa-bell fa-lg text-light">
+                            
+                          </i>
+                        </a>
+                      </li>
+                      <li class="nav-item px-3 ms-md-auto">
+                        <a href="" class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                          <i class="fas fa-sign-out-alt fa-lg text-danger">  
+                          </i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!--modal-->
+
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">آیا میخواهید خارج شود؟</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-muted">
+              در صورت خروج ، برای دسترسی به پنل باید مجددا وارد شوید
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-success" data-bs-dismiss="modal">میمانم</button>
+              <button type="button" class="btn btn-danger">خارج میشوم</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!--card-->
+      <section>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xl-10 col-lg-9 col-md-8 ms-auto">
+               <div class="row my-md-3 pt-md-5 ">
+
+                 <div class="col-lg-3 col-md-6 p-2">
+                  <div class="card card-common" >
+                    <div class="card-body d-flex justify-content-between align-items-center">
+                      <div class="text-secondary">
+                        <h5>فروش</h5>
+                        <h5 class="mt-4">30 میلیون</h5>
+                      </div>
+                      <i class="fas fa-shopping-cart text-warning fa-3x"></i>
+                    </div>
+                    <div class="card-footer text-secondary text-center">
+                      <i class="fas fa-sync"></i>
+                      <span>به روز رسانی</span>
+                    </div>
+                  </div>
+                 </div>
+
+                 <div class="col-lg-3 col-md-6 p-2">
+                  <div class="card card-common" >
+                    <div class="card-body d-flex justify-content-between align-items-center">
+                      <div class="text-secondary">
+                        <h5>هزینه</h5>
+                        <h5 class="mt-4">5 میلیون</h5>
+                      </div>
+                      <i class="fas fa-money-bill-alt text-success fa-3x"></i>
+                    </div>
+                    <div class="card-footer text-secondary text-center">
+                      <i class="fas fa-sync"></i>
+                      <span>به روز رسانی</span>
+                    </div>
+                  </div>
+                 </div>
+
+                 <div class="col-lg-3 col-md-6 p-2">
+                  <div class="card card-common" >
+                    <div class="card-body d-flex justify-content-between align-items-center">
+                      <div class="text-secondary">
+                        <h5>کاربران</h5>
+                        <h5 class="mt-4">50000</h5>
+                      </div>
+                      <i class="fas fa-users text-info fa-3x"></i>
+                    </div>
+                    <div class="card-footer text-secondary text-center">
+                      <i class="fas fa-sync"></i>
+                      <span>به روز رسانی</span>
+                    </div>
+                  </div>
+                 </div>
+
+                 <div class="col-lg-3 col-md-6 p-2">
+                  <div class="card card-common" >
+                    <div class="card-body d-flex justify-content-between align-items-center">
+                      <div class="text-secondary">
+                        <h5>بازدید</h5>
+                        <h5 class="mt-4">10000</h5>
+                      </div>
+                      <i class="fas fa-chart-line text-danger fa-3x"></i>
+                    </div>
+                    <div class="card-footer text-secondary text-center">
+                      <i class="fas fa-sync"></i>
+                      <span>به روز رسانی</span>
+                    </div>
+                  </div>
+                 </div>
+               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--progres and task-->
+      <section>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xl-10 col-lg-9 col-md-8 ms-auto">
+              <div class="row">
+                <!--progres-->
+                <div class="col-lg-6">
+                  <div class="topbar-color text-white rounded p-4">
+                    <h4 class="mb-4">پروژه ها</h4>
+                    <h6 class="mb-2 mt-4">کتابخانه آنلاین</h6>
+                    <div class="progress" style="height: 20px;">
+                      <div class="progress-bar progress-bar-striped fw-bold bg-secondary" style="width: 85%;">85%</div>
+                    </div>
+
+                    <h6 class="mb-2 mt-4">اپلیکیشن</h6>
+                    <div class="progress" style="height: 20px;">
+                      <div class="progress-bar progress-bar-striped fw-bold bg-primary" style="width: 64%;">64%</div>
+                    </div>
+
+                    <h6 class="mb-2 mt-4">وب سرور</h6>
+                    <div class="progress" style="height: 20px;">
+                      <div class="progress-bar progress-bar-striped fw-bold bg-success" style="width: 40%;">40%</div>
+                    </div>
+                  </div>
+                </div>
+                <!--task-->
+                <div class="col-lg-6">
+                  <h4 class="text-muted p-3 mb-3">تسک ها</h4>
+                  <div class="container-fluid bg-white">
+                    <div class="row py-3 mb-4 align-content-center task-border">
+                      <div class="col-1">
+                        <input type="checkbox" checked>
+                      </div>
+                      <div class="col-9">
+                        آماده کردن سمت بک اند
+                      </div>
+                      <div class="col-1">
+                        <a href=""
+                        data-bs-toggle="tooltip"  data-bs-placement="top"
+                        data-bs-title="ویرایش"><i class="fas fa-edit fa-lg text-success ms-2"></i>
+                        </a>
+                      </div>
+                      <div class="col-1">
+                        <a href=""
+                        data-bs-toggle="tooltip"  data-bs-placement="top"
+                        data-bs-title="حذف"><i class="fas fa-trash fa-lg text-danger ms-2"></i>
+                        </a>
+                      </div>
+                    </div>
+
+                    <div class="row py-3 mb-4 align-content-center task-border">
+                      <div class="col-1">
+                        <input type="checkbox">
+                      </div>
+                      <div class="col-9">
+                        آماده کردن سمت بک اند
+                      </div>
+                      <div class="col-1">
+                        <a href=""
+                        data-bs-toggle="tooltip"  data-bs-placement="top"
+                        data-bs-title="ویرایش"><i class="fas fa-edit fa-lg text-success ms-2"></i>
+                        </a>
+                      </div>
+                      <div class="col-1">
+                        <a href=""
+                        data-bs-toggle="tooltip"  data-bs-placement="top"
+                        data-bs-title="حذف"><i class="fas fa-trash fa-lg text-danger ms-2"></i>
+                        </a>
+                      </div>
+                    </div>
+
+                    <div class="row py-3 mb-4 align-content-center task-border">
+                      <div class="col-1">
+                        <input type="checkbox" checked>
+                      </div>
+                      <div class="col-9">
+                        آماده کردن سمت بک اند
+                      </div>
+                      <div class="col-1">
+                        <a href=""
+                        data-bs-toggle="tooltip"  data-bs-placement="top"
+                        data-bs-title="ویرایش"><i class="fas fa-edit fa-lg text-success ms-2"></i>
+                        </a>
+                      </div>
+                      <div class="col-1">
+                        <a href=""
+                        data-bs-toggle="tooltip"  data-bs-placement="top"
+                        data-bs-title="حذف"><i class="fas fa-trash fa-lg text-danger ms-2"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--tables-->
+      <section>
+        <div class="container-fluid">
+          <div class="row mb-5">
+            <div class="col-xl-10 col-lg-9 col-md-8 ms-auto">
+              <div class="row">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                  <h3 class="text-muted text-center mb-3">پرداختی ها</h3>
+                  <table class="table table-dark table-hover text-center">
+                    <thead>
+                      <tr>
+                        <th>#</th>
+                        <th>نام</th>
+                        <th>مبلغ</th>
+                        <th>تاریخ</th> 
+                        <th>وضعیت</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>محمد</td>
+                        <td>5 میلیون</td>
+                        <td>10 تیر ماه</td>
+                        <td>
+                          <span class="badge w-75 py-2 bg-success">پرداخت شده</span>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>1</td>
+                        <td>محمد</td>
+                        <td>5 میلیون</td>
+                        <td>10 تیر ماه</td>
+                        <td>
+                          <span class="badge w-75 py-2 bg-danger">رد شده</span>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>1</td>
+                        <td>محمد</td>
+                        <td>5 میلیون</td>
+                        <td>10 تیر ماه</td>
+                        <td>
+                          <span class="badge w-75 py-2 bg-success">پرداخت شده</span>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>1</td>
+                        <td>محمد</td>
+                        <td>5 میلیون</td>
+                        <td>10 تیر ماه</td>
+                        <td>
+                          <span class="badge w-75 py-2 bg-warning">انتظار</span>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                   <!--pabination-->
+                <nav aria-label="...">
+                  <ul class="pagination justify-content-center">
+                    <li class="page-item">
+                      <a class="page-link py-2 px-3">&laquo;</a>
+                    </li>
+                    <li class="page-item"><a class="page-link py-2 px-3" href="#">3</a></li>
+                    <li class="page-item " aria-current="page">
+                      <a class="page-link py-2 px-3" href="#">2</a>
+                    </li>
+                    <li class="page-item"><a class="page-link py-2 px-3 active" href="#">1</a></li>
+                    <li class="page-item">
+                      <a class="page-link py-2 px-3" href="#">&raquo;</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+
+               
+                <div class="col-lg-6">
+                  <h3 class="text-muted text-center mb-3">تیکت های اخیر</h3>
+                  <table class="table table-striped text-center bg-light">
+                    <thead>
+                      <tr>
+                        <th>#</th>
+                        <th>نام</th>
+                        <th>تاریخ</th> 
+                        <th>تاریخ</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>محمد</td>
+                        <td>10 تیر ماه</td>
+                        <td>
+                          <button class="btn btn-info btn-sm">پاسخ</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td>محمد</td>
+                        <td>10 تیر ماه</td>
+                        <td>
+                          <button class="btn btn-info btn-sm">پاسخ</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td>محمد</td>
+                        <td>10 تیر ماه</td>
+                        <td>
+                          <button class="btn btn-info btn-sm">پاسخ</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td>محمد</td>
+                        <td>10 تیر ماه</td>
+                        <td>
+                          <button class="btn btn-info btn-sm">پاسخ</button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                   <!--pabination-->
+                <nav aria-label="...">
+                  <ul class="pagination justify-content-center">
+                    <li class="page-item">
+                      <a class="page-link py-2 px-3">&laquo;</a>
+                    </li>
+                    <li class="page-item"><a class="page-link py-2 px-3" href="#">3</a></li>
+                    <li class="page-item " aria-current="page">
+                      <a class="page-link py-2 px-3" href="#">2</a>
+                    </li>
+                    <li class="page-item"><a class="page-link py-2 px-3 active" href="#">1</a></li>
+                    <li class="page-item">
+                      <a class="page-link py-2 px-3" href="#">&raquo;</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!--activities-->
+
+  <section>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xl-10 col-lg-9 col-md-8 ms-auto">
+          <div class="row">
+            <div class="col-lg-7 py-2">
+              <h4 class="text-muted mb-3 text-center">فعالیت های اخیر</h4>
+              <div class="card">
+                <div class="accordion" id="accordionExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                      <button class="accordion-button card-common" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <img src="images/p1.jpg" class="me-2 rounded-circle" style="width: 50px; height: 50px;" alt="">
+                        سمیه یک گفتگوی جدید ایجاد کرد
+                      </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی در شصت و سه درصد گذشته حال و آینده
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                      <button class="accordion-button collapsed card-common" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <img src="images/p2.jpg" class="me-2 rounded-circle" style="width: 50px; height: 50px;" alt="">
+                        سمیه یک گفتگوی جدید ایجاد کرد
+                      </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی در شصت و سه درصد گذشته حال و آینده
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                      <button class="accordion-button collapsed card-common" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <img src="images/p3.jpg" class="me-2 rounded-circle" style="width: 50px; height: 50px;" alt="">
+                        سمیه یک گفتگوی جدید ایجاد کرد
+                      </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی در شصت و سه درصد گذشته حال و آینده
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                      <button class="accordion-button collapsed card-common" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        <img src="images/p1.jpg" class="me-2 rounded-circle" style="width: 50px; height: 50px;" alt="">
+                        سمیه یک گفتگوی جدید ایجاد کرد
+                      </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی در شصت و سه درصد گذشته حال و آینده
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                      <button class="accordion-button collapsed card-common" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        <img src="images/p3.jpg" class="me-2 rounded-circle" style="width: 50px; height: 50px;" alt="">
+                        سمیه یک گفتگوی جدید ایجاد کرد
+                      </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی در شصت و سه درصد گذشته حال و آینده
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-5 mt-5">
+              <div class="card py-3">
+                <div class="card-body j">
+                  <h3 class="card-title text-center text-muted mb-4">پست جدید</h3>
+                  <div class="text-center py-3">
+                    <a href="" style="text-decoration: none;"><i class="fas fa-pencil-alt text-center pe-2 text-success"></i><span class="text-muted">وضعیت</span></a>
+                    <a href="" style="text-decoration: none;" class="px-4"><i class="fas fa-camera text-center pe-2 text-info"></i><span class="text-muted">تصویر</span></a>
+                    <a href="" style="text-decoration: none;"><i class="fas fa-map-marked text-center pe-2 text-danger"></i><span class="text-muted">مکان</span></a>
+                  </div>
+                  <form action="">
+                    <div class="form-group">
+                      <input type="text" class="form-control py-2 mb-2" placeholder="یه چیزی بنویس...">
+                      <button class="btn text-light bg-info w-100">ارسال</button>
+                    </div>
+                  </form>
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="card mt-4">
+                        <i class="fas fa-calendar-alt fa-4x text-warning py-3 d-block m-auto"></i>
+                        <div class="card-body">
+                          <p class="card-text text-center">سه شنبه 17 تیر</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="card mt-4">
+                        <i class="fas fa-clock fa-4x text-warning py-3 d-block m-auto"></i>
+                        <div class="card-body">
+                          <p class="card-text text-center">9:30 صبح</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--footer-->
+  <footer>
+    <div class="container-fluid">
+      <div class="row mt-5 mb-3">
+        <div class="col-xl-10 col-lg-9 col-md-8 ms-auto">
+          <div class="row">
+            <div class="col-lg-7 text-center text-secondary h4">
+              <div class="mb-3">
+                <a href="" style="text-decoration: none;" class="text-secondary h5">درباره ما</a>
+                <a href="" style="text-decoration: none;" class="text-secondary h5 px-3">پشتیبانی</a>
+                <a href="" style="text-decoration: none;" class="text-secondary h5">وبلاگ</a>
+              </div>
+            </div>
+
+            <div class="col-lg-5 text-secondary">
+              ساخته شده توسط سمیه حیدری&copy;
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" ></script>
+    <script>
+      const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+      const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+   </script>
+    
+    
+</body>
+</html>
